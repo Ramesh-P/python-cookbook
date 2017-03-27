@@ -39,11 +39,21 @@ greeting = 'Good Morning'
 print(greeting, name, sep=', ', end='!')
 # OUT: Good Morning, Tom!
 
+# Print with output formatting
+a = 5
+b= 10
+print('The value of a is {} and b is {}'.format(a, b))
+# OUT: The value of a is 5 and b is 10
 
+# Print ordered output
+this = 'butter'
+that = 'bread'
+print('I like {1} and {0}'.format(this, that))
+# OUT: I like bread and butter
 
-
-
-
+# Print using keyword
+print('Hi {name}, {greeting}!'.format(name = 'Tom', greeting = 'Good Morning'))
+# OUT: Hi Tom, Good Morning!
 
 
 # Python 2
