@@ -49,3 +49,13 @@ collection = ['word', 10, 'A']
 for item in collection:
     print(item)
 # OUT: word, 10, A
+
+# Python 3.6.0
+# List of Lists
+lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for list in lists:
+    print(list)
+# OUT:
+    # [1, 2, 3]
+    # [4, 5, 6]
+    # [7, 8, 9]
