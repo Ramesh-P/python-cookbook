@@ -73,3 +73,38 @@ for index in range(len(items)):
     # Rock
     # Paper
     # Scissors
+
+# Python 3.6.0
+# Nested loops
+units = [1, 2]
+items = ['house', 'boat', 'car']
+for unit in units:
+    for item in items:
+        print (unit, item)
+# OUT:
+    # 1 house
+    # 1 boat
+    # 1 car
+    # 2 house
+    # 2 boat
+    # 2 car
+
+# Python 3.6.0
+# Exit
+for number in range(10):
+    if number == 3:
+        break
+    print(number)
+# OUT: 0, 1, 2
+
+# Python 3.6.0
+# For...else
+for number in range(3):
+    print(number, 'is in range')
+else:
+    print(number + 1, 'is out of range')
+# OUT:
+    # 0 is in range
+    # 1 is in range
+    # 2 is in range
+    # 3 is out of range
