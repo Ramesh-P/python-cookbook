@@ -10,6 +10,43 @@ for number in numbers:
     # Third number is 2
 
 # Python 3.6.0
+# List of strings
+toys = ['truck', 'marbles', 'ball']
+for toy in toys:
+    print(toy)
+# OUT:
+    # truck
+    # marbles
+    # ball
+
+# Python 3.6.0
+# Mixed list (numbers and strings)
+collection = [1, 'book', 2, 'pens']
+for item in collection:
+    print(item)
+# OUT:
+    # 1
+    # book
+    # 2
+    # pens
+
+# Python 3.6.0
+# List of lists
+lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for list in lists:
+    print(list)
+# OUT:
+    # [1, 2, 3]
+    # [4, 5, 6]
+    # [7, 8, 9]
+
+# Python 3.6.0
+# String
+for item in 'hello':
+    print (item)
+# OUT: h, e, l, l, o
+
+# Python 3.6.0
 # Range of all numbers
 for number in range(10):
     print(number)
@@ -36,26 +73,3 @@ for index in range(len(items)):
     # Rock
     # Paper
     # Scissors
-
-# Python 3.6.0
-# String
-for item in 'hello':
-    print (item)
-# OUT: h, e, l, l, o
-
-# Python 3.6.0
-# List
-collection = ['word', 10, 'A']
-for item in collection:
-    print(item)
-# OUT: word, 10, A
-
-# Python 3.6.0
-# List of Lists
-lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-for list in lists:
-    print(list)
-# OUT:
-    # [1, 2, 3]
-    # [4, 5, 6]
-    # [7, 8, 9]
