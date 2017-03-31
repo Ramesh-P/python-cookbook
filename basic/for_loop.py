@@ -36,3 +36,16 @@ for index in range(len(items)):
     # Rock
     # Paper
     # Scissors
+
+# Python 3.6.0
+# String
+for item in 'hello':
+    print (item)
+# OUT: h, e, l, l, o
+
+# Python 3.6.0
+# List
+collection = ['word', 10, 'A']
+for item in collection:
+    print(item)
+# OUT: word, 10, A
