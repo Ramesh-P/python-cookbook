@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
+    line-height: normal;
 }
 header {
     width: calc(~"100% - 40px");
@@ -18,32 +19,62 @@ header {
     strong {
         color: white;
     }
+    div {
+        display: inline-block;
+        background: url("../dropdown.svg") no-repeat right, white;
+        border-radius: 10px 0 0 10px;
+    }
+    select {
+        width: 100px;
+        padding: 10px;
+        margin: 0;
+        background: transparent;
+        font-size: 16px;
+        line-height: 20px;
+        border: none;
+        border-radius: 10px 0 0 10px;
+        outline: none;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
     input {
-        width: calc(~"100% - 170px");
+        display: inline-block;
+        width: calc(~"100% - 271px");
         padding: 10px;
         line-height: 20px;
         font-size: 16px;
         border: none;
-        border-radius: 10px;
+        border-radius: 0 10px 10px 0;
+        outline: none;
     }
     img {
+        display: inline-block;
         width: 130px;
         padding: 0 10px;
     }
 }
-ul {
+
+#results {
     margin: 0;
     padding: 0;
-}
-li {
-    width: calc(~"100% - 40px");
-    padding: 20px;
-    border-bottom: 1px dashed @4;
-    list-style: none;
-}
-code {
-    white-space: pre;
-}
-a {
-    color: @1;
+    li {
+        padding: 20px;
+        border-bottom: 1px dashed @4;
+        list-style: none;
+    }
+    code {
+        white-space: pre;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        // Safari suddenly thought my <header> was contenteditable, and let me
+        // backspace it. That doesn't happen every day. Moving on...
+    }
+    a {
+        color: @1;
+    }
 }

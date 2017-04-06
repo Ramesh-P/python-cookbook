@@ -4,5 +4,65 @@
         "folder": "basic",
         "friendlyName": "Comment",
         "keywords": "comment out single multi line basic"
+    },
+    {
+        "file": "print.py",
+        "folder": "basic",
+        "friendlyName": "Print",
+        "keywords": "print put output display stdout console log"
+    },
+    {
+        "file": "for_loop.py",
+        "folder": "basic",
+        "friendlyName": "For loop",
+        "keywords": "for loop over iterate iterable"
+    },
+    {
+        "file": "function.py",
+        "folder": "basic",
+        "friendlyName": "Function",
+        "keywords": "function define"
+    },
+    {
+        "file": "if_statement.py",
+        "folder": "basic",
+        "friendlyName": "If statement",
+        "keywords": "if else elseif elsif elif"
+    },
+    {
+        "file": "list.py",
+        "folder": "basic",
+        "friendlyName": "List",
+        "keywords": "list array series set collection mutable"
+    },
+    {
+        "file": "try_statement.py",
+        "folder": "basic",
+        "friendlyName": "Try statement",
+        "keywords": "try except exception error catch finally"
+    },
+    {
+        "file": "tuple.py",
+        "folder": "basic",
+        "friendlyName": "Tuple",
+        "keywords": "tuple list array series set collection immutable"
+    },
+    {
+        "file": "while_loop.py",
+        "folder": "basic",
+        "friendlyName": "While loop",
+        "keywords": "while loop do iterate"
+    },
+    {
+        "file": "dictionary.py",
+        "folder": "basic",
+        "friendlyName": "Dictionary",
+        "keywords": "dictionary dict key value pair hash"
+    },
+    {
+        "file": "set.py",
+        "folder": "basic",
+        "friendlyName": "Set",
+        "keywords": "set series collection"
     }
 ]
