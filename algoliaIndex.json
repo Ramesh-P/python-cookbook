@@ -6,10 +6,10 @@
         "keywords": "comment out single multi line basic"
     },
     {
-        "file": "print.py",
+        "file": "dictionary.py",
         "folder": "basic",
-        "friendlyName": "Print",
-        "keywords": "print put output display stdout console log"
+        "friendlyName": "Dictionary",
+        "keywords": "dictionary dict key value pair hash"
     },
     {
         "file": "for_loop.py",
@@ -36,6 +36,18 @@
         "keywords": "list array series set collection mutable"
     },
     {
+        "file": "print.py",
+        "folder": "basic",
+        "friendlyName": "Print",
+        "keywords": "print put output display stdout console log"
+    },
+    {
+        "file": "set.py",
+        "folder": "basic",
+        "friendlyName": "Set",
+        "keywords": "set series collection"
+    },
+    {
         "file": "try_statement.py",
         "folder": "basic",
         "friendlyName": "Try statement",
@@ -52,17 +64,5 @@
         "folder": "basic",
         "friendlyName": "While loop",
         "keywords": "while loop do iterate"
-    },
-    {
-        "file": "dictionary.py",
-        "folder": "basic",
-        "friendlyName": "Dictionary",
-        "keywords": "dictionary dict key value pair hash"
-    },
-    {
-        "file": "set.py",
-        "folder": "basic",
-        "friendlyName": "Set",
-        "keywords": "set series collection"
     }
 ]
