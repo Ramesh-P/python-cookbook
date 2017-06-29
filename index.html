@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Python Cookbook</title>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Noto+Sans">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" media="only screen and  (max-width: 640px)" href="styles/handhelds.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.22.1/algoliasearchLite.min.js"></script>
-        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js" charset="utf-8"></script>
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Python Cookbook</title>
+    <!-- Algolia -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/algoliasearch/3.22.1/algoliasearchLite.min.js"></script>
+    <!-- Google Code Prettify -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Initialize Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Bootstrap select plugin -->
+    <link rel="stylesheet" href="http://bit.ly/2tmY2Rc">
+    <script src="http://bit.ly/2tmZ1R5"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Extras -->
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow.css">
+    <link rel="stylesheet" href="https://bootswatch.com/spacelab/bootstrap.min.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-            ga('create', 'UA-96639650-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </head>
-    <body>
-        <header>
-            <h1>Ramesh Parthasarathy's <strong>Python Cookbook</strong></h1>
-            <div>
-                <select id="sel">
-                    <option value="*">All</option>
-                    <option value="basic">Basic</option>
-                </select>
-            </div><!--
-            --><input type="text" id="search" placeholder="Search&hellip;" aria-atomic="true"><!--
-            --><img src="logo.svg" alt="Search by Algolia" aria-hidden="true">
-        </header>
-        <ul id="results"></ul>
-    </body>
+      ga('create', 'UA-96639650-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <span class="navbar-brand">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            Ramesh Parthasarathy&rsquo;s
+            <strong>Python Cookbook</strong>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="input-group">
+        <select class=" input-group-btn selectpicker" id="cat">
+          <option value="*">All</option>
+          <option value="basic">Basic</option>
+        </select>
+        <input type="text" class="form-control" id="query">
+      </div>
+    </div>
+    <div class="container">
+      <ul class="list-group" id="root"></ul>
+    </div>
     <script src="search.js"></script>
+  </body>
 </html>
